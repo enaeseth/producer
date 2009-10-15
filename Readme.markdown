@@ -3,6 +3,10 @@ Producer
 
 Producer is an application for making podcasts from automatically-created recordings.
 
+To run Producer, your system needs a working [SoX][sox] installation.
+
+[sox]: http://sox.sourceforge.net/
+
 License
 -------
 
