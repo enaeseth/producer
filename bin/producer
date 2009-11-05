@@ -97,8 +97,8 @@ def finish_session(session_id, end_time, recording_file):
 def trim_audio(recording, output_file, start, length):
     sox = ['sox', recording, output_file]
     trim = ['trim', '%f' % start, '%f' % length]
-    pad = ['pad', '2']
-    fade = ['fade', '0', '%f' % (length + 2), '3']
+    pad = ['pad', '0', '2']
+    fade = ['fade', '0.4', '%f' % (length + 2), '3']
     
     command = sox + trim + pad + fade
     subprocess.check_call(command)
